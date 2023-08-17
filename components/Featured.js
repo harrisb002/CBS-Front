@@ -6,7 +6,7 @@ import ButtonLink from "./ButtonLink";
 const Bg = styled.div`
   background-color: #e6e6fa;
   color: #e6e6fa;
-  padding: 50px 0;
+  padding: 50px 0 0px;
 `;
 const Title = styled.h1`
   margin: 0;
@@ -24,6 +24,7 @@ const ColumnsWrapper = styled.div`
   gap: 40px;
   img {
     max-width: 100%;
+    max-height: 90%;
   }
 `;
 const ButtonsWrapper = styled.div`

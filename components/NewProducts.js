@@ -11,13 +11,20 @@ const ProductsGrid = styled.div`
 
 const Bg = styled.div`
   background-color: #c0e4f9;
-  padding-bottom: 100%;
+  padding-top: 10px;
+  padding-bottom: 150px;
+`;
+
+const ArrivalsTitle = styled.h2`
+  font-size: 2rem;
+  margin: 0;
 `;
 
 export default function NewProducts({ products }) {
   return (
     <Bg>
       <Center>
+        <h2>New Arrivals</h2>
         <ProductsGrid>
           {products?.length > 0 &&
             products.map((product) => <ProductBox {...product} />)}
