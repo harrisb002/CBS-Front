@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { primary } from "@/lib/colors";
 
 export const ButtonStyle = css`
   border: 0;
@@ -8,12 +9,18 @@ export const ButtonStyle = css`
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Satisfy", cursive;
-  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   svg {
-    height: 20px;
-    margin-right: 10px;
+    height: 16px;
+    margin-right: 5px;
   }
+  ${(props) =>
+    props.block &&
+    css`
+      display: block;
+      width: 100%;
+    `}
   ${(props) =>
     props.white &&
     !props.outline &&
@@ -26,25 +33,48 @@ export const ButtonStyle = css`
     props.outline &&
     css`
       background-color: transparent;
-      font-weight: 600;
-      color: #6495ed;
-      border: 2px solid #7df9ff;
+      color: #fff;
+      border: 1px solid #fff;
+    `}
+  ${(props) =>
+    props.black &&
+    !props.outline &&
+    css`
+      background-color: #b71c1c;
+      color: #fff;
+    `}
+  ${(props) =>
+    props.black &&
+    props.outline &&
+    css`
+      background-color: transparent;
+      color: #b71c1c;
+      border: 1px solid #b71c1c;
     `}
   ${(props) =>
     props.primary &&
     !props.outline &&
     css`
-      background-color: #6f8faf;
-      border: 2px solid #6f8faf;
+      background-color: ${primary};
+      border: 1px solid ${primary};
       color: #fff;
     `}
   ${(props) =>
     props.primary &&
     props.outline &&
     css`
-      background-color: #a6f8ee;
-      border: 2px solid #1b4685;
-      color: #1b4685;
+      background-color: #2e4053;
+      border: 2px solid #dfff00;
+      color: #fbff56;
+    `}
+  ${(props) =>
+    props.size === "l" &&
+    css`
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      svg {
+        height: 20px;
+      }
     `}
 `;
 
