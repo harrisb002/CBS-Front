@@ -8,11 +8,11 @@ export const ButtonStyle = css`
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-family: "Satisfy", cursive;
+  font-weight: 800;
   svg {
-    height: 16px;
-    margin-right: 5px;
+    height: 20px;
+    margin-right: 10px;
   }
   ${(props) =>
     props.white &&
@@ -35,16 +35,16 @@ export const ButtonStyle = css`
     !props.outline &&
     css`
       background-color: #6f8faf;
-      border: 1px solid #6f8faf;
+      border: 2px solid #6f8faf;
       color: #fff;
     `}
   ${(props) =>
     props.primary &&
     props.outline &&
     css`
-      background-color: transparent;
-      border: 1px solid #6f8faf;
-      color: #6f8faf;
+      background-color: #a6f8ee;
+      border: 2px solid #1b4685;
+      color: #1b4685;
     `}
 `;
 

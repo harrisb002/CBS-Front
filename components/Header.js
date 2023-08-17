@@ -8,8 +8,9 @@ const StyledHeader = styled.header`
 `;
 const Logo = styled(Link)`
   color: #e6e6fa;
+  font-weight: 600;
   font-width: normal;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
 `;
 const Wrapper = styled.div`
@@ -19,11 +20,12 @@ const Wrapper = styled.div`
 `;
 const NavLink = styled(Link)`
   color: #aaa;
+  font-size: 1.3rem;
   text-decoration: none;
 `;
 const StyledNav = styled.nav`
   display: flex;
-  gap: 15px;
+  gap: 20px;
 `;
 
 export default function Header() {

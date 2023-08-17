@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  body{
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,700;1,800&family=Satisfy&display=swap');
+body{
     padding:0;
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Satisfy', cursive;  
   }
 `;
 
