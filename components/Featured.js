@@ -5,39 +5,66 @@ import ButtonLink from "./ButtonLink";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
+//BG Color
+//  background-color: #e6e6fa;
+//  color: #e6e6fa;
+//Title color: #0047ab;
+
 const Bg = styled.div`
-  background-color: #e6e6fa;
-  color: #e6e6fa;
-  padding: 50px 0 0px;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
 `;
+
 const Title = styled.h1`
   margin: 0;
-  font-width: normal;
-  font-size: 2.4rem;
-  color: #0047ab;
+  color: #40ffe8;
+  font-weight: normal;
+  font-size: 1.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 3.3rem;
+  }
 `;
+
 const Desc = styled.p`
-  color: #0047ab;
-  font-size: 1rem;
+  color: #40ffe8;
+  font-weight: normal;
+  font-size: 1.3rem;
 `;
+
 const ColumnsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 0.9fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   img {
     max-width: 100%;
-    max-height: 90%;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
   }
-`;
-const ButtonsWrapper = styled.div`
-  display: flex;
-  gap: 12px;
-  margin-top: 25px;
+  div:nth-child(1) {
+    order: 2;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1.1fr 0.9fr;
+    div:nth-child(1) {
+      order: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
 `;
 
 const Column = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
 `;
 
 export default function Featured({ product }) {
@@ -79,7 +106,7 @@ export default function Featured({ product }) {
           </Column>
           <Column>
             <img
-              src="https://crochetimages.s3.amazonaws.com/1692250280101.JPG"
+              src="https://crochetimages.s3.amazonaws.com/1692250285683.JPG"
               alt=""
             />
           </Column>
