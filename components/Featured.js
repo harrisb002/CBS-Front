@@ -41,10 +41,10 @@ const Column = styled.div`
 `;
 
 export default function Featured({ product }) {
-  const { setCartProducts } = useContext(CartContext);
+  const { addProduct } = useContext(CartContext);
 
   function addFeaturedToCart() {
-    setCartProducts((prev) => [...prev, product._id]);
+    addProduct(product._id);
   }
 
   return (
