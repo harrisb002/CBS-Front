@@ -8,17 +8,12 @@ const StyledButton = styled.button`
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   svg {
     height: 16px;
     margin-right: 5px;
   }
-  ${(props) =>
-    props.block &&
-    css`
-      display: block;
-      width: 100%;
-    `}
   ${(props) =>
     props.white &&
     !props.outline &&
@@ -31,15 +26,16 @@ const StyledButton = styled.button`
     props.outline &&
     css`
       background-color: transparent;
-      color: #fff;
-      border: 1px solid #fff;
+      font-weight: 600;
+      color: #6495ed;
+      border: 2px solid #7df9ff;
     `}
   ${(props) =>
     props.primary &&
     !props.outline &&
     css`
-      background-color: #19a6c0;
-      border: 1px solid #19a6c0;
+      background-color: #6f8faf;
+      border: 1px solid #6f8faf;
       color: #fff;
     `}
   ${(props) =>
@@ -47,20 +43,10 @@ const StyledButton = styled.button`
     props.outline &&
     css`
       background-color: transparent;
-      border: 1px solid #19a6c0;
-      color: #19a6c0;
-    `}
-  ${(props) =>
-    props.size === "l" &&
-    css`
-      font-size: 1.2rem;
-      padding: 10px 20px;
-      svg {
-        height: 20px;
-      }
+      border: 1px solid #6f8faf;
+      color: #6f8faf;
     `}
 `;
-
 export default function Button({ children, ...rest }) {
   return <StyledButton {...rest}>{children}</StyledButton>;
 }

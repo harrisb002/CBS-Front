@@ -3,18 +3,19 @@ import Center from "./Center";
 import Button from "./Button";
 
 const Bg = styled.div`
-  background-color: #222;
-  color: #fff;
+  background-color: #e6e6fa;
+  color: #e6e6fa;
   padding: 50px 0;
 `;
 const Title = styled.h1`
   margin: 0;
   font-width: normal;
-  font-size: 3rem;
+  font-size: 2.4rem;
+  color: #0047ab;
 `;
 const Desc = styled.p`
-  color: #aaa;
-  font-size: 0.8rem;
+  color: #0047ab;
+  font-size: 1rem;
 `;
 const ColumnsWrapper = styled.div`
   display: grid;
@@ -45,7 +46,7 @@ export default function Featured({ product }) {
               <Title>{product.title}</Title>
               <Desc>{product.description}</Desc>
               <ButtonsWrapper>
-                <Button outlined white>
+                <Button outline white>
                   Read more
                 </Button>
                 <Button primary>
@@ -64,7 +65,7 @@ export default function Featured({ product }) {
           </Column>
           <Column>
             <img
-              src="https://crochetimages.s3.amazonaws.com/1692239918494.JPG"
+              src="https://crochetimages.s3.amazonaws.com/1692250280101.JPG"
               alt=""
             />
           </Column>

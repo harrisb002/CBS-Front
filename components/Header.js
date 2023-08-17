@@ -4,10 +4,12 @@ import Center from "./Center";
 
 //Styled Components
 const StyledHeader = styled.header`
-  background-color: #222;
+  background-color: #630330;
 `;
 const Logo = styled(Link)`
-  color: #fff;
+  color: #e6e6fa;
+  font-width: normal;
+  font-size: 1.3rem;
   text-decoration: none;
 `;
 const Wrapper = styled.div`
