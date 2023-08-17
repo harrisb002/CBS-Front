@@ -3,7 +3,7 @@ import Button from "./Button";
 import CartIcon from "./icons/CartIcon";
 
 const BorderBox = styled.div`
-  background-color: #dfeffe;
+  background-color: #c5ffed;
   padding: 20px;
   height: 150px;
   text-align: center;
@@ -20,7 +20,7 @@ const BorderBox = styled.div`
 
 const Title = styled.h2`
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
 `;
 

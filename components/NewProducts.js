@@ -5,17 +5,24 @@ import ProductBox from "./ProductBox";
 const ProductsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding-top: 20px;
+  gap: 30px;
+  padding-top: 30px;
+`;
+
+const Bg = styled.div`
+  background-color: #c0e4f9;
+  padding-bottom: 100%;
 `;
 
 export default function NewProducts({ products }) {
   return (
-    <Center>
-      <ProductsGrid>
-        {products?.length > 0 &&
-          products.map((product) => <ProductBox {...product} />)}
-      </ProductsGrid>
-    </Center>
+    <Bg>
+      <Center>
+        <ProductsGrid>
+          {products?.length > 0 &&
+            products.map((product) => <ProductBox {...product} />)}
+        </ProductsGrid>
+      </Center>
+    </Bg>
   );
 }
