@@ -24,7 +24,7 @@ export default function NewProducts({ products }) {
   return (
     <Bg>
       <Center>
-        <h2>New Arrivals</h2>
+        <ArrivalsTitle>New Arrivals</ArrivalsTitle>
         <ProductsGrid>
           {products?.length > 0 &&
             products.map((product) => <ProductBox {...product} />)}
