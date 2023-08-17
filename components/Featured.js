@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Center from "./Center";
+import Button from "./Button";
 
 const Bg = styled.div`
   background-color: #222;
@@ -40,6 +41,8 @@ export default function Featured() {
                 This is an Awesome pink turtle with an attached chain for your
                 keys or to be hanged anywhere you would like.
               </Desc>
+              <Button>Read more</Button>
+              <Button>Add to cart</Button>
             </div>
           </Column>
           <Column>
