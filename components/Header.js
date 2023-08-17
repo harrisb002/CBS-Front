@@ -13,6 +13,15 @@ const Logo = styled(Link)`
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+`;
+const NavLink = styled(Link)`
+  color: #aaa;
+  text-decoration: none;
+`;
+const StyledNav = styled.nav`
+  display: flex;
+  gap: 15px;
 `;
 
 export default function Header() {
@@ -21,13 +30,13 @@ export default function Header() {
       <Center>
         <Wrapper>
           <Logo href={"/"}>CBS</Logo>
-          <nav>
-            <Link href={"/"}>Home</Link>
-            <Link href={"/products"}>All Products</Link>
-            <Link href={"/categories"}>Categories</Link>
-            <Link href={"/account"}>Account</Link>
-            <Link href={"/cart"}>Cart</Link>
-          </nav>
+          <StyledNav>
+            <NavLink href={"/"}>Home</NavLink>
+            <NavLink href={"/products"}>All Products</NavLink>
+            <NavLink href={"/categories"}>Categories</NavLink>
+            <NavLink href={"/account"}>Account</NavLink>
+            <NavLink href={"/cart"}>Cart</NavLink>
+          </StyledNav>
         </Wrapper>
       </Center>
     </StyledHeader>
