@@ -35,18 +35,15 @@ const Column = styled.div`
   align-items: center;
 `;
 
-export default function Featured() {
+export default function Featured({ product }) {
   return (
     <Bg>
       <Center>
         <ColumnsWrapper>
           <Column>
             <div>
-              <Title>Featured Product</Title>
-              <Desc>
-                This is an Awesome pink turtle with an attached chain for your
-                keys or to be hanged anywhere you would like.
-              </Desc>
+              <Title>{product.title}</Title>
+              <Desc>{product.description}</Desc>
               <ButtonsWrapper>
                 <Button outlined white>
                   Read more
