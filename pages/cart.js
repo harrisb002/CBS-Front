@@ -134,8 +134,12 @@ export default function CartPage() {
         <Center>
           <ColumnsWrapper>
             <Box>
-              <h1>Thanks for your order!</h1>
-              <p>We will email you when your order will be sent.</p>
+              <h1>Thank you so much for your order!</h1>
+              <h2>I greatly appreciate your support to my small company.</h2>
+              <p>
+                You will shortly be receiving an email with details specific to
+                your order. Thank you again!
+              </p>
             </Box>
           </ColumnsWrapper>
         </Center>

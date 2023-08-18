@@ -6,10 +6,10 @@ import { CartContext } from "./CartContext";
 
 //Styled Components
 const StyledHeader = styled.header`
-  background-color: #630330;
+  background-color: #c3b7ac;
 `;
 const Logo = styled(Link)`
-  color: #e6e6fa;
+  color: #000;
   font-weight: 600;
   font-width: normal;
   font-size: 1.5rem;
@@ -21,8 +21,8 @@ const Wrapper = styled.div`
   padding: 20px 0;
 `;
 const NavLink = styled(Link)`
-  color: #aaa;
-  font-size: 1.3rem;
+  color: #000;
+  font-size: 1.7rem;
   text-decoration: none;
 `;
 const StyledNav = styled.nav`

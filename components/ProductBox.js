@@ -6,7 +6,7 @@ import { CartContext } from "./CartContext";
 import { useContext } from "react";
 
 const BorderBox = styled(Link)`
-  background-color: #6082b6;
+  background-color: #c3b7ac;
   padding: 4px;
   height: 150px;
   text-align: center;
@@ -15,25 +15,25 @@ const BorderBox = styled(Link)`
   justify-content: center;
   border-radius: 25px;
   img {
-    max-width: 180px;
-    max-height: 180px;
+    max-width: 280px;
+    max-height: 280px;
   }
   @media screen and (min-width: 768px) {
     padding: 4px;
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
     img {
       border-radius: 20px;
-      max-width: 180px;
-      max-height: 180px;
+      max-width: 280px;
+      max-height: 280px;
     }
   }
 `;
 
 const Title = styled(Link)`
   font-weight: normal;
-  font-size: 1.2rem;
-  color: inherit;
+  font-size: 2.2rem;
+  color: #4682b4;
   text-decoration: none;
   margin: 0;
 `;
@@ -57,10 +57,10 @@ const PriceRow = styled.div`
 
 const Price = styled.div`
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: normal;
   text-align: right;
   @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: left;
   }
