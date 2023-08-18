@@ -6,19 +6,27 @@ import { CartContext } from "./CartContext";
 import { useContext } from "react";
 
 const BorderBox = styled(Link)`
-  background-color: #90caf9;
-
-  padding: 20px;
+  background-color: #6082b6;
+  padding: 4px;
   height: 150px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 25px;
   img {
-    max-width: 100%;
-    max-height: 150px;
-    border-radius: 12px;
+    max-width: 180px;
+    max-height: 180px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 4px;
+    width: 180px;
+    height: 180px;
+    img {
+      border-radius: 20px;
+      max-width: 180px;
+      max-height: 180px;
+    }
   }
 `;
 

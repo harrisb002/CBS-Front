@@ -35,26 +35,26 @@ const ProductInfoCell = styled.td`
 `;
 
 const ProductImageBox = styled.div`
-  width: 70px;
-  height: 100px;
-  padding: 1px;
-  border: 3px solid rgba(255, 205, 210);
+  background-color: #ccccff;
+  padding: 4px;
+  height: 150px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 25px;
   img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 100px;
+    max-height: 100px;
   }
   @media screen and (min-width: 768px) {
-    padding: 6px;
-    width: 70px;
-    height: 70px;
+    padding: 3px;
+    width: 100px;
+    height: 100px;
     img {
-      border-radius: 10px;
-      max-width: 80px;
-      max-height: 80px;
+      border-radius: 20px;
+      max-width: 100px;
+      max-height: 100px;
     }
   }
 `;
