@@ -74,7 +74,7 @@ export default function ProductBox({ _id, title, description, price, images }) {
     <ProductWrapper>
       <BorderBox href={url}>
         <div>
-          <img src={images[0]} alt="" />
+          <img src={images?.[0]} alt="" />
         </div>
       </BorderBox>
       <ProductInfoBox>
